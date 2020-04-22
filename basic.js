@@ -68,3 +68,38 @@ console.log(obj3)
 console.log(2==2) -> Is variable same value.
 console.log(2==='2') -> Is variable same type.
 */
+
+/* for in
+const obj = {
+    fname : "rungnapa",
+    lname : "Ittiponsuwan"    
+}
+// for in get key
+for (const key in obj) {
+    console.log(key)
+    //access value
+    console.log(obj[key])
+}
+//access by key have to use String
+console.log(obj["fname"])
+*/
+
+/*array
+let arr = [1,2,3,"hello"]
+for (const index in arr) {
+    console.log(arr[index])
+    
+}
+
+
+let array = []
+array[0] = 2
+array[5] = 3
+//index of arrays are 6 but you have values are 2 , so forin print 2 value
+for (const index in array) {
+    console.log("lenght of array :"+array.length+ " value of index : "+array[index])
+}
+
+*/
+
+
