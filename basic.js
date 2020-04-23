@@ -176,7 +176,7 @@ const arr3 = [...arr1,4,...arr2]
 console.log(arr3)
 */
 
-/*Array Destructuring -> if you do it , fname look like variable and you can call normal
+/*Array Destructuring  -> if you do it , fname look like variable and you can call normal
 // line 182 ,arr push value to index of [fname,nickname]
 const arr = ["Rungnapa","Milk"]
 const[fname,nickname] = arr
@@ -185,7 +185,8 @@ console.log(`Hi ${fname} `)
 console.log(`Are you ${nickname}`)
 
 const array = ["Rungnapa"]
-const[name,nname] = array
+//name of index not need same key of obj 
+const[name,nname] = array 
 
 console.log(`Hi ${name} `)
 console.log(`Are you ${nname}`) // undefined
@@ -199,4 +200,29 @@ const array2 = ["Rungnapa","Milk"]
 const[,Nick] = array2
 
 console.log(`Hi ${nickname} `)
+*/
+
+/*object Destructuring
+const obj = {
+    name: "rungnapa",
+    nickname : "ittiponsuwan"
+}
+//name of index have to same key of obj 
+const {name , nickname} = obj
+console.log(`${name}`)
+console.log(`${nickname}`)
+*/
+
+/*import
+import {a} from './a.js' // {} use for value not to be  export default
+import name from './a.js' // use for value  to be export default
+console.log(a) // error -> solve by create package.json
+name("Hello")
+
+
+import {a} from './a.js'
+import b from './a.js' // get value default to b 
+
+console.log(a)
+console.log(b)
 */
