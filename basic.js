@@ -213,16 +213,56 @@ console.log(`${name}`)
 console.log(`${nickname}`)
 */
 
-/*import
+/* Module
 import {a} from './a.js' // {} use for value not to be  export default
 import name from './a.js' // use for value  to be export default
 console.log(a) // error -> solve by create package.json
 name("Hello")
 
 
-import {a} from './a.js'
+import {a , b as bb} from './a.js' // b as bb is change variable b to bb
 import b from './a.js' // get value default to b 
 
 console.log(a)
-console.log(b)
+console.log(bb)
+*/
+
+/*call back is put function to be parameter of function , call back use 2 thing is function and time
+setTimeout(() => { //setTimeout to be asynchronous ->  do it other not need wait
+     console.log("Hello"
+)},2000) // 2000 -> wait 2 second after that call function () => ...
+console.log("End")
+*/
+
+
+/* .filter
+const scores = [23,45,60,11]
+const scoreMoreThen30 = scores.filter(
+    (score) => {
+        return score > 30
+    }
+)
+console.log(scoreMoreThen30)
+*/
+
+
+/*.map -> edit value in array
+const scores = [23,45,60,11]
+const scoresPlus10 = scores.map(
+    (value ) => {
+        return value +10
+    }
+)
+console.log(scores)
+console.log(scoresPlus10)
+*/ 
+
+/* .reduce -> sum in arrays
+const scores = [23,45,60,11]
+const sumScore = scores.reduce(
+    (sum,score) => {
+        return sum+score
+    },0 // start curr = 0 
+)
+console.log(sumScore)
 */
